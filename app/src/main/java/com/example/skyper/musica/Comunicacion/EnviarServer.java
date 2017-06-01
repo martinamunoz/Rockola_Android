@@ -113,7 +113,6 @@ public class EnviarServer extends AppCompatActivity
                             mostrarToast("Error al enviar voto");
                             error.printStackTrace();
                         }
-
                     });
             requestQueue.add(jsonObjectRequest);
             return retorno;
@@ -133,8 +132,7 @@ public class EnviarServer extends AppCompatActivity
         @Override
         protected void onPostExecute(Boolean result)
         {
-            if(result)
-                mostrarToast("");
+
         }
 
         @Override
