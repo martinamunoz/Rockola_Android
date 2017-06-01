@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="?android:attr/listPreferredItemHeight" >
+
+    <ImageButton
+        android:id="@+id/btnPositivo"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:tint="@color/colorPrimaryDark"
+        android:background="@color/colorWhite"
+        app:srcCompat="@android:drawable/ic_input_add"/>
+
+    <ImageButton
+        android:id="@+id/btnNegativo"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorWhite"
+        app:srcCompat="@android:drawable/presence_busy"/>
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@id/btnNegativo"
+        android:layout_toRightOf="@id/btnPositivo"
+        android:background="@color/colorWhite"
+        android:singleLine="true"
+        android:text="Titulo"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textIsSelectable="false"/>
+    <TextView
+        android:id="@+id/artista"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@id/btnNegativo"
+        android:layout_toRightOf="@id/btnPositivo"
+        android:background="@color/colorWhite"
+        android:singleLine="true"
+        android:text="Artista"
+        android:visibility="invisible"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textIsSelectable="false"/>
+    <TextView
+        android:id="@+id/album"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@id/btnNegativo"
+        android:layout_toRightOf="@id/btnPositivo"
+        android:background="@color/colorWhite"
+        android:singleLine="true"
+        android:text="Album"
+        android:visibility="invisible"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textIsSelectable="false"/>
+
+    <TextView
+        android:id="@+id/idCancion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="idCancion"
+        android:visibility="invisible"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,34 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <!-- Tema de la action bar-->
+    <style name="ToolbarTheme" parent="Widget.AppCompat.Toolbar">
+        <item name="android:id">@id/toolbar</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:minHeight">?attr/actionBarSize</item>
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:titleTextAppearance">@style/AppTheme.Toolbar.Title</item>
+        <item name="android:textAppearance">@style/AppTheme.Toolbar.Title</item>
+        <item name="actionMenuTextColor">@color/colorWhite</item>
+        <item name="actionButtonStyle">@style/Widget.AppCompat.ActionButton</item>
+        <item name="colorControlHighlight">@color/colorWhite</item>
+        <item name="colorControlNormal">#FFF</item>
+        <item name="colorControlActivated">#FFF</item>
+        <item name="android:textColorPrimary">#FFF</item>
+    </style>
+    <!-- Fin Tema de la action bar-->
+    <!-- Tema del titulo de la action bar*** Este es referenciado en el tema de arriba-->
+    <style name="AppTheme.Toolbar.Title" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <!-- Set proper title size -->
+        <item name="android:textSize">@dimen/abc_text_size_title_material_toolbar</item>
+        <!-- Set title color -->
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+</resources>
